@@ -1,4 +1,4 @@
-# CondenseNets
+# SRCondenseNet
 
 This repository contains the code (in PyTorch) for "[Efficient Single Image Super Resolution using Enhanced Learned Group Convolutions](https://arxiv.org/abs/1808.08509)", paper by Vandit Jain, Prakhar Bansal, Abhinav Kumar Singh, Rajeev Srivastava.
 
