@@ -1,0 +1,256 @@
+=> loading checkpoint 'results/savedir/best_save_models4_3/checkpoint_003.pth.tar'
+=> loaded checkpoint 'results/savedir/best_save_models4_3/checkpoint_003.pth.tar'
+Epoch: [4][0/347]	Data 0.000	Loss 14818.4834	lr  0.0000
+Train Psnr: 0.0	 Train SSIM: 0.0	 Loss: 16928.5114875
+Val Psnr: 29.2518787855	 Val SSIM: 0.0
+Epoch: [5][0/347]	Data 0.000	Loss 18404.1758	lr  0.0000
+Train Psnr: 0.0	 Train SSIM: 0.0	 Loss: 16829.8024686
+Val Psnr: 29.3239106663	 Val SSIM: 0.0
+Epoch: [6][0/347]	Data 0.000	Loss 15701.8691	lr  0.0000
+Train Psnr: 0.0	 Train SSIM: 0.0	 Loss: 16750.7218621
+Val Psnr: 29.392500677	 Val SSIM: 0.0
+Epoch: [7][0/347]	Data 0.000	Loss 18085.5566	lr  0.0000
+Train Psnr: 0.0	 Train SSIM: 0.0	 Loss: 16659.505474
+Val Psnr: 29.4633663029	 Val SSIM: 0.0
+Epoch: [8][0/347]	Data 0.000	Loss 16369.7168	lr  0.0000
+Train Psnr: 0.0	 Train SSIM: 0.0	 Loss: 16576.0312567
+Val Psnr: 29.5273954524	 Val SSIM: 0.0
+Process Process-14:
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+Process Process-12:
+Traceback (most recent call last):
+Process Process-9:
+Process Process-13:
+Process Process-1:
+Process Process-16:
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Process Process-8:
+Traceback (most recent call last):
+Process Process-19:
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-3:
+Process Process-2:
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-20:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-5:
+Process Process-18:
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-15:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Process Process-11:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-4:
+Process Process-6:
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+Process Process-17:
+Process Process-7:
+Traceback (most recent call last):
+Traceback (most recent call last):
+    self.run()
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+    self.run()
+    self.run()
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self.run()
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self.run()
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self._target(*self._args, **self._kwargs)
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self.run()
+    self.run()
+    self.run()
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+    self.run()
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self._target(*self._args, **self._kwargs)
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+Process Process-10:
+Traceback (most recent call last):
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/utils/data/dataloader.py", line 36, in _worker_loop
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    racquire()
+    racquire()
+KeyboardInterrupt
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+KeyboardInterrupt
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    r = index_queue.get()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 378, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    racquire()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    racquire()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+    racquire()
+    racquire()
+    return recv()
+    racquire()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/multiprocessing/queue.py", line 21, in recv
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+    racquire()
+KeyboardInterrupt
+    racquire()
+    racquire()
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+    racquire()
+    racquire()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+    r = index_queue.get()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/multiprocessing/queues.py", line 376, in get
+    racquire()
+KeyboardInterrupt
+    buf = self.recv_bytes()
+KeyboardInterrupt
+Epoch: [0][0/4463]	Data 0.000	Loss 14888.5801	lr  0.0000
+Epoch: [0][750/4463]	Data 0.000	Loss 18281.5848	lr  0.0000
+Epoch: [0][1500/4463]	Data 0.000	Loss 18039.7592	lr  0.0000
+Epoch: [0][2250/4463]	Data 0.000	Loss 17879.4305	lr  0.0000
+Epoch: [0][3000/4463]	Data 0.000	Loss 17775.5645	lr  0.0000
+Traceback (most recent call last):
+  File "main.py", line 408, in <module>
+    main()
+  File "main.py", line 191, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "main.py", line 279, in train
+    loss.backward()
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/autograd/variable.py", line 167, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, retain_variables)
+  File "/home/cse/ug/15075036/anaconda2/envs/pytorch/lib/python2.7/site-packages/torch/autograd/__init__.py", line 99, in backward
+    variables, grad_variables, retain_graph)
+KeyboardInterrupt
