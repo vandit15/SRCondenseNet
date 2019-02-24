@@ -51,16 +51,21 @@ python main.py --model condensenet -b 256 -j 20 /PATH/TO/DATA \
 
 
 ## Results
-We have used 91 images from Yang et al.[24] and 200 images from the Berkeley Segmentation Dataset(BSD)[25] for training.
+We have used 91 images from Yang et al. and 200 images from the Berkeley Segmentation Dataset(BSD) for training.
 
 ### Results on various datasets:
-| Dataset | PSNR | SSIM |
-|---|---|---|---|
-|Set5 | 37.79 | 0.9594 |
-|Set14 | 33.23 | 0.9137 |
-|Urban100 | 31.24 | 0.9190 |
+| Dataset  |  PSNR | SSIM  |
+|---|---|---|
+|  Set5 | 37.79  | 0.9594  |
+| Set14  | 33.23  | 0.9137  |
+| Urban100 | 31.24 | 0.9190 |
+
+### Flop count
+Flops count to produce a 64x64 output image comes out to be 668.88 million.
+
 
 ## Contact
 jainvandit15@gmail.com
+
 prakhar.bansal.cse15@itbhu.ac.in
 
