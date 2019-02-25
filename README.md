@@ -51,7 +51,7 @@ python main.py --model condensenet -b 256 -j 20 /PATH/TO/DATA \
 
 
 ## Results
-We have used 91 images from Yang et al. and 200 images from the Berkeley Segmentation Dataset(BSD) for training.
+We have used 91 images from Yang et al. and 200 images from the Berkeley Segmentation Dataset(BSD) with 32x32 patches for training.
 
 ### Results on various datasets:
 | Dataset  |  PSNR | SSIM  |
