@@ -122,13 +122,13 @@ def main():
     global args, model
 
     ### Calculate FLOPs & Param
-    # model = getattr(models, args.model)(args)
-    # IMAGE_SIZE = args.inp_img_size
-    # n_flops, n_params = measure_model(model.cuda(), IMAGE_SIZE, IMAGE_SIZE, args.scaling_factor)
-    # print('FLOPs: %.2fM, Params: %.2fM' % (n_flops / 1e6, n_params / 1e6))
-    # args.filename = "%s_%s_%s.txt" % \
-    #     (args.model, int(n_params), int(n_flops))
-    # del(model)
+    model = getattr(models, args.model)(args)
+    IMAGE_SIZE = args.inp_img_size
+    n_flops, n_params = measure_model(model.cuda(), IMAGE_SIZE, IMAGE_SIZE, args.scaling_factor)
+    print('FLOPs: %.2fM, Params: %.2fM' % (n_flops / 1e6, n_params / 1e6))
+    args.filename = "%s_%s_%s.txt" % \
+        (args.model, int(n_params), int(n_flops))
+    del(model)
 
     ###########  Building Model ##############
     cudnn.benchmark = True
@@ -141,6 +141,7 @@ def main():
     ##########  Data Loading ###############
     traindir = os.path.join("../data/", args.train_data)
     testdir = os.path.join("../data/", args.test_data)
+    
     train_img = read_data(traindir, crop_size=args.inp_img_size, upscale_factor=args.scaling_factor, c_dim=args.c_dim, stride = 128)
     train_set = TensorClass(train_img[0], train_img[1], train_img[2])
     test_set = testDatasetFromFolder2(testdir, upscale_factor=args.scaling_factor)
@@ -157,20 +158,6 @@ def main():
             model.load_state_dict(checkpoint['state_dict'])
             optimizer.load_state_dict(checkpoint['optimizer'])
 
-    ### Optionally convert from a model
-    # if args.convert_from is not None:
-    #     args.evaluate = True
-    #     state_dict = torch.load(args.convert_from)['state_dict']
-    #     model.load_state_dict(state_dict)
-    #     model = model.cpu().module
-    #     convert_model(model, args)
-    #     model = nn.DataParallel(model)
-    #     if args.gpu is not None:
-    #         model = model.cuda()
-    #     head, tail = os.path.split(args.convert_from)
-    #     tail = "converted_" + tail
-    #     torch.save({'state_dict': model.state_dict()}, os.path.join(head, tail))
-
     ### Optionally evaluate from a model
     if args.evaluate_from is not None:
         args.evaluate = True
@@ -182,8 +169,6 @@ def main():
         print ("test Psnr: " + str(test_psnr) + "\t test SSIM: " + str(test_ssim) )
         return
 
-    cudnn.benchmark = True
-
     for epoch in range(args.start_epoch, args.epochs):
         ### Train for one epoch
         tr_psnr, tr_ssim ,loss, lr = \
@@ -194,7 +179,7 @@ def main():
         print ("Train Psnr: " + str(tr_psnr) + "\t Train SSIM: " + str(tr_ssim) + "\t Loss: " + str(loss))
         print ("test Psnr: " + str(test_psnr) + "\t test SSIM: " + str(test_ssim))
         
-        ### save checkpoin
+        ### save checkpoint
         model_filename = 'checkpoint_%03d.pth.tar' % epoch
         save_checkpoint({
             'epoch': epoch,
