@@ -67,5 +67,5 @@ Flops count to produce a 64x64 output image comes out to be 668.88 million.
 ## Contact
 jainvandit15@gmail.com
 
-prakhar.bansal.cse15@itbhu.ac.in
+prakhar.bansal.cse15@iitbhu.ac.in
 
