@@ -42,10 +42,6 @@ def is_leaf(model):
 def convert_model(model, args):
     for m in model._modules:
         child = model._modules[m]
-        # if is_leaf(child):
-        #     if isinstance(child, nn.Linear):
-        #         model._modules[m] = CondensingLinear(child, 0.5)
-        #         del(child)
         if is_pruned(child):
             model._modules[m] = CondensingConv(child)
             del(child)
@@ -336,8 +332,6 @@ def bicubic(x, c_dim, scaling_factor):
 def read_data(dataset_dir, crop_size, upscale_factor, c_dim, stride):
     image_filenames =  [join(dataset_dir, x) for x in listdir(dataset_dir) if is_image_file(x)]
 
-    # li = torch.Tensor(6*len(image_filenames), c_dim, crop_size//upscale_factor, crop_size//upscale_factor)
-    # li2 = torch.Tensor(6*len(image_filenames), c_dim, crop_size, crop_size)
     list1 = []
     list2 = []
 
@@ -348,27 +342,9 @@ def read_data(dataset_dir, crop_size, upscale_factor, c_dim, stride):
         (im, Cb, Cr) = get_ychannel(im)
         im_h, im_w = calculate_valid_crop_size2((im_h, im_w), upscale_factor)
         im = RandomCrop((im_w, im_h))(im)
-        # im = transform(im)
-        # im_rt = Rand_Rotate_right(im)
-        # im_lt = Rand_Rotate_left(im)
-        # im_fl = Rand_Flip(im)
-        # im_180 = Rand_Rotate_180(im)
-        # im_fl2 = Rand_Flip2(im)
         transform_hr = train_hr_transform(crop_size)
         transform_lr = train_lr_transform((crop_size, crop_size), upscale_factor)
         im_crop = transform_hr(im)
-        # im_rt_crop = transform_hr(im_rt)
-        # im_lt_crop = transform_hr(im_lt)
-        # im_180_crop = transform_hr(im_180)
-        # im_fl_crop = transform_hr(im_fl)
-        # im_fl2_crop = transform_hr(im_fl2)
-        # im_crop_low = transform_lr(im_crop)
-        # im_rt_crop_low = transform_lr(im_rt_crop)
-        # im_lt_crop_low = transform_lr(im_lt_crop)
-        # im_180_crop_low = transform_lr(im_180_crop)
-        # im_fl_crop_low = transform_lr(im_fl_crop)
-        # im_fl2_crop_low = transform_lr(im_fl2_crop)
-        # temp_list_low = [im_crop_low, im_rt_crop_low, im_lt_crop_low, im_fl_crop_low, im_180_crop_low, im_fl2_crop_low]
         temp_list = [im_crop]
         length = len(list1)
         for i in temp_list:
@@ -379,23 +355,6 @@ def read_data(dataset_dir, crop_size, upscale_factor, c_dim, stride):
         for i in range(len(list1) - length):
             im = transform_lr(list1[length+i])
             list2.append(im)
-        # for i  in temp_list_low:
-        #     temp = stride_data(i, stride//upscale_factor, crop_size//upscale_factor)
-        #     for j in temp:
-        #         list2.append(j) 
-        # li[counter] = im_crop_low
-        # li[counter+1] = im_rt_crop_low
-        # li[counter+2] = im_lt_crop_low
-        # li[counter+3] = im_fl_crop_low
-        # li[counter+4] = im_180_crop_low
-        # li[counter+5] = im_fl2_crop_low 
-        # li2[counter] = im_crop
-        # li2[counter+1] = im_rt_crop
-        # li2[counter+2] = im_lt_crop
-        # li2[counter+3] = im_fl_crop
-        # li2[counter+4] = im_180_crop
-        # li2[counter+5] = im_fl2_crop
-        # counter += 6
     li = torch.Tensor(len(list2), c_dim, crop_size//upscale_factor, crop_size//upscale_factor)
     li2 = torch.Tensor(len(list1), c_dim, crop_size, crop_size)
     li3 = torch.Tensor(len(list2), c_dim, crop_size, crop_size)
@@ -471,15 +430,6 @@ class testDatasetFromFolder2(data.Dataset):
         img_y=resize_image_by_pil(im_gt_y,sc)
         img_hr = resize_image_by_pil(img_y, self.upscale_factor)
         return ToTensor()(img_y), ToTensor()(im_gt_y),ToTensor()(img_hr), ToTensor()(gt_yuv)
-        ################### edit on 20.3   ####################
-
-        # crop_size = calculate_valid_crop_size2((hr_image.size[0], hr_image.size[1]), self.upscale_factor)
-        # lr_scale = Resize((crop_size[0] // self.upscale_factor, crop_size[1] // self.upscale_factor), interpolation=Image.BICUBIC)
-        # hr_scale = Resize((crop_size[0], crop_size[1]), interpolation=Image.BICUBIC)
-        # hr_image = CenterCrop(crop_size)(hr_image)
-        # lr_image = lr_scale(hr_image)
-        # hr_restore_img = hr_scale(lr_image)  
-        # return ToTensor()(lr_image), ToTensor()(hr_restore_img), ToTensor()(hr_image)
 
     def __len__(self):
         return len(self.image_filenames)

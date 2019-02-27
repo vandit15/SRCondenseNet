@@ -313,11 +313,6 @@ def test(test_loader, model, criterion):
             out_res = cv2.merge((output.data[j][0].cpu().numpy(), cr, cb))
             out_res = cv2.cvtColor(out_res, cv2.COLOR_YCR_CB2BGR)
             cv2.imwrite('set14resultsx4/out_res%d.jpg' %(i*test_batch_size + j+1), out_res*255)
-        # if i % 4 == 0:
-        #     print('Test: [{0}/{1}]\t'
-        #           'Time {batch_time:.3f}'
-        #           'Loss {loss.val:.4f} ({loss.avg:.4f})\t'.format(
-        #               i, input.size(0), batch_time=batch_time, loss=losses))
 
     return test_psnr/total_images, ssim_value/total_images
 
